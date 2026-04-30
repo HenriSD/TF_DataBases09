@@ -9,6 +9,7 @@
 use loja_virtual
 
 2 e 3:
+```javascript
 
 db.produtos.insertOne({
   nome: "Smartphone Galaxy A15",
@@ -19,7 +20,10 @@ db.produtos.insertOne({
   cor: "Azul"
 })
 
+```
+
 4:
+```javascript
 
 db.produtos.insertMany([
   {
@@ -40,6 +44,8 @@ db.produtos.insertMany([
   }
 ])
 
+```
+
 # Exercicio 2:
 
 1:
@@ -56,27 +62,38 @@ db.produtos.find({ categoria: "Eletronicos" })
 
 4:
 
+```javascript
+
 db.produtos.find(
   {},
   { nome: 1, preco: 1, _id: 0 }
 )
 
+```
+
 # Exercicio 3:
 
 1:
+
+```javascript
 
 db.produtos.updateOne(
   { nome: "Smartphone Galaxy A15" },
   { $set: { preco: 1199.90 } }
 )
 
+```
+
 2:
+
+```javascript
 
 db.produtos.updateMany(
   {},
   { $set: { estoque: 50 } }
 )
 
+```
 3: 
 
 # Exercicio 4:
